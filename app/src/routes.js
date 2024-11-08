@@ -1,4 +1,4 @@
-import {Home, NotFound, About} from './Pages';
+import {Home, NotFound, MyDay, About} from './Pages';
 import {wrap} from 'svelte-spa-router/wrap';
 import {Auth, Errors} from './lib';
 
@@ -27,6 +27,7 @@ const guard = (component) => {
 
 const routes = {
     '/': guard(Home),
+    '/myday': guard(MyDay),
     '/about': guard(About),
     '*': NotFound,
 };
