@@ -2,7 +2,7 @@
 
 Healthy mind for a better life.
 
-Developed by Team "418 I'm A Teapot" for NITS Hacks 7.0.
+Developed by Team "418 I'm A Teapot" (NIT Agartala) for NITS Hacks 7.0.
 
 ## Technologies Used
 

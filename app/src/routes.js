@@ -1,4 +1,4 @@
-import {Home, NotFound, MyDay, Auth as AuthPage, About} from './Pages';
+import {Home, NotFound, MyDay, Auth as AuthPage, About, Meditation} from './Pages';
 import {wrap} from 'svelte-spa-router/wrap';
 import {Auth, Errors} from './lib';
 
@@ -29,6 +29,7 @@ const routes = {
     '/': guard(Home),
     '/myday': guard(MyDay),
     '/about': guard(About),
+    '/meditation/:type?': guard(Meditation),
     '/auth': AuthPage,
     '*': NotFound,
 };
