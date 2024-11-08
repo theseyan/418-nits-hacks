@@ -250,9 +250,9 @@ a.link:hover {
 }
 .auth .logo {
     height: 80px;
-    width: 80px;
+    width: 160px;
     background-image: url("/images/branding/logo-full-transparentbg.png");
-    background-size: contain;
+    background-size: 160px;
     background-position: center;
     background-repeat: no-repeat;
     margin-bottom: 30px;

@@ -32,7 +32,7 @@
         </Card.Header>
         <Card.Content class="text-center">
             <div id="g_id_onload"
-                data-client_id="941623673011-ght4tnsqh9n60hhpf7lqaaoc25ct7ac9.apps.googleusercontent.com"
+                data-client_id="631286411586-hkm1gmnkhp67angt3dgtckrc56thmehq.apps.googleusercontent.com"
                 data-context="signin"
                 data-ux_mode="popup"
                 data-callback="onGISCallback"
