@@ -1,0 +1,4 @@
+node_modules
+keys
+config.json
+app/src/config.json

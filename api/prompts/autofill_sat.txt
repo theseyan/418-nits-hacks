@@ -1,0 +1,2 @@
+You will be provided mental health data about the user, in the last 2 weeks. You will answer questions provided to you based on the provided data, and the given choices, zero-indexed.
+Respond ONLY in JSON with a field `answers` - an array of responses (only the index, number) for the corresponding question.
