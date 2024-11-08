@@ -1,0 +1,36 @@
+{
+  "name": "app",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^3.1.1",
+    "autoprefixer": "^10.4.20",
+    "svelte": "^4.2.18",
+    "tailwindcss": "^3.4.9",
+    "vite": "^5.4.1"
+  },
+  "dependencies": {
+    "@okrad/svelte-progressbar": "^2.2.0",
+    "bits-ui": "^0.21.15",
+    "chart.js": "^4.4.3",
+    "chartjs-adapter-dayjs-4": "^1.0.4",
+    "clsx": "^2.1.1",
+    "dayjs": "^1.11.13",
+    "ky": "^1.6.0",
+    "lingua-recorder": "^2.2.1",
+    "lucide-svelte": "^0.428.0",
+    "svelte-chartjs": "^3.1.5",
+    "svelte-heatmap": "^1.0.2",
+    "svelte-loading-spinners": "^0.3.6",
+    "svelte-spa-router": "^4.0.1",
+    "svelte-vertical-timeline": "^1.0.2",
+    "tailwind-merge": "^2.5.2",
+    "tailwind-variants": "^0.2.1"
+  }
+}

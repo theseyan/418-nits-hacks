@@ -1,0 +1,257 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+ 
+@layer base {
+    :root {
+        --background: 0 0% 100%;
+        --foreground: 240 10% 3.9%;
+    
+        --muted: 240 4.8% 95.9%;
+        --muted-foreground: 240 3.8% 46.1%;
+    
+        --popover: 0 0% 100%;
+        --popover-foreground: 240 10% 3.9%;
+    
+        --card: 0 0% 100%;
+        --card-foreground: 240 10% 3.9%;
+    
+        --border: 240 5.9% 90%;
+        --input: 240 5.9% 90%;
+    
+        --primary: 240 5.9% 10%;
+        --primary-foreground: 0 0% 98%;
+    
+        --secondary: 240 4.8% 95.9%;
+        --secondary-foreground: 240 5.9% 10%;
+    
+        --accent: 240 4.8% 95.9%;
+        --accent-foreground: 240 5.9% 10%;
+    
+        --destructive: 0 72.2% 50.6%;
+        --destructive-foreground: 0 0% 98%;
+    
+        --ring: 240 10% 3.9%;
+    
+        --radius: 7px;
+    }
+}
+ 
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+html {
+	font: normal 18px / 20px Montserrat, "Segoe UI", Arial, Tahoma, Verdana, sans-serif;
+        -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+    cursor: default;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+body {
+    background-image: url("/images/bg-1500.png");
+    backdrop-filter: blur(50px);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: linear-gradient(180deg, #f8b5ff, #e4e4e4);
+}
+
+body * {
+    touch-action: pan-y !important;
+}
+
+* {
+	box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+}
+*::after,
+*::before {
+	box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+}
+
+/* Custom Scrollbars */
+.sb::-webkit-scrollbar {
+    width: 0.45em;
+    background-color: transparent;
+}
+.sb::-webkit-scrollbar-thumb {
+    background-color: hsl(0 0% 0% / 0.2);
+    border-radius: 50px;
+}
+
+.header {
+    display: flex;
+    height: 90px;
+    align-items: center;
+    padding: 0px 30px;
+}
+.header .section {
+    width: 100%;
+}
+.header .logo {
+    width: 100%;
+    background-image: url("/images/branding/logo-full-transparentbg.png");
+    display: inline-block;
+    height: 80%;
+    background-size: 170px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.header .right {
+    text-align: right;
+}
+.header .right .logout-btn {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #320c6e;
+}
+.body {
+    display: flex;
+}
+.body .sidebar {
+    width: 20%;
+    min-width: 20%;
+}
+.body .content {
+    width: 100%;
+    padding: 20px 30px 100px;
+    height: calc(100vh - 90px);
+    overflow: auto;
+}
+
+.body .sidebar .menu .item {
+    display: flex;
+    margin: 10px 20px;
+    padding: 15px 10px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 19px;
+    align-items: center;
+    border-radius: 7px;
+}
+.body .sidebar .menu .item.active {
+    background-color: #ffffff30; /*#0000000a*/
+}
+.body .sidebar .menu .item svg {
+    margin-right: 12px;
+    color: #00000063;
+    transition: color 100ms;
+}
+.body .sidebar .menu .item:hover svg {
+    color: #000000;
+}
+.body .sidebar .menu .item.active svg {
+    color: black;
+}
+
+.font-display {
+    font-family: "DM Serif Display", "Montserrat", "Segoe UI", sans-serif;
+}
+
+.body .heading {
+    font-family: "DM Serif Display", "Montserrat", "Segoe UI", sans-serif;
+    margin: 0 0px 30px;
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+.feeling-bar {
+    position: fixed;
+    bottom: 25px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 50%;
+    background-color: #ffffffde;
+    height: 60px;
+    border-radius: 100px;
+    overflow: hidden;
+    display: flex;
+    box-shadow: 0px 1px 3px #0000001c;
+    border: 2px solid transparent;
+    transition-duration: 100ms;
+}
+.feeling-bar.active {
+    border: 2px solid #000000;
+    background-color: white;
+}
+.feeling-bar .icon {
+    width: 45px;
+    min-width: 45px;
+    background-image: url("/images/branding/favicon-circle.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 7px;
+}
+.feeling-bar input {
+    border: 0;
+    outline: none;
+    background-color: transparent;
+    width: 100%;
+    font-family: inherit;
+    font-size: 16px;
+    padding: 0px 20px;
+    font-weight: 500;
+}
+
+.overall-mood .mood-num {
+    font-size: 2rem;
+}
+.overall-mood .remark {
+    color: #000000a1;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    font-weight: 500;
+}
+.overall-mood svg {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    fill: #544d5e;
+    margin-bottom: 10px;
+}
+
+a.link {
+    display: inline-block;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #65519e;
+}
+a.link:hover {
+    text-decoration: underline;
+}
+.home .quick-links a.link {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.page-notif {
+    color: #000000a1;
+}
+.page-notif svg {
+    width: 45px;
+    height: 45px;
+    margin-bottom: 10px;
+    color: inherit;
+}
+.page-notif h1 {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    font-weight: 500;
+}
