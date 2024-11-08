@@ -15,7 +15,7 @@
         document.title = "Home — WellWave";
 
         try {
-            // todayData = await Data.fetchTodayAnalyses();
+            todayData = await Data.fetchTodayAnalyses();
 
             // Calculate overall mood today
             let overallMood = 0;
