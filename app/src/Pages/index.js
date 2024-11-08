@@ -12,4 +12,3 @@ export {default as GAD7} from './SATTest/GAD7.svelte';
 export {default as PHQ9} from './SATTest/PHQ9.svelte';
 export {default as UCLA} from './SATTest/UCLA.svelte';
 export {default as Auth} from './Auth/Auth.svelte';
-export {default as Auth} from './Auth/Auth.svelte';
