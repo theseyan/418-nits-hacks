@@ -9,7 +9,8 @@
     "build": "cd app && NODE_ENV=production npm run build",
     "dev": "NODE_ENV=development nodemon server.js",
     "prodapp": "cd app && NODE_ENV=production npx vite preview --port 2071",
-    "db": "surreal start --username root --password root --strict --bind 0.0.0.0:3000 rocksdb:~/Databases/nitshacks"
+    "db": "surreal start --username root --password root --strict --bind 0.0.0.0:3000 rocksdb:~/Databases/nitshacks",
+    "deploy": "cd app && npm run build && npx wrangler pages deploy dist"
   },
   "repository": {
     "type": "git",
